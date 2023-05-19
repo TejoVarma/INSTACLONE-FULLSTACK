@@ -1,0 +1,140 @@
+.login-matte-black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.login-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-heading {
+    margin-top: 50px;
+    font-size: 48px;
+}
+
+.login-container {
+    display: flex;
+    align-content: center;
+    margin-top: 100px;
+}
+
+.login-left-section {
+    margin-right: 10px;
+    width: 50%;
+
+}
+
+.login {
+    font-size: 38px;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.login-right-section {
+    width: 50%;
+}
+
+.login-form-container {
+    background-color: white;
+    width: 50%;
+}
+
+.login-form {
+    box-shadow: 0 0 5px grey;
+    min-width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.login-field-container {
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid gainsboro; */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.login-field-container input {
+    width: 90%;
+    height: 90%;
+    padding: 5px 30px 0px 10px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid grey;
+    font-size: 16px;
+}
+
+.login-field-container label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: .5s;
+    color: black;
+}
+
+.login-field-container input:focus~label,
+.login-field-container input:valid~label {
+    top: -8px;
+    left: 10px;
+    font-size: 14px;
+    color: grey;
+}
+
+.login-btn-container {
+    margin-top: 30px;
+    padding: 0 10px;
+    text-align: center;
+    color: black;
+}
+
+.login-btn-container button {
+    outline: none;
+    background-color: rgb(0, 81, 255);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    padding: 5px 20px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.login-btn-container button:hover,
+.login-btn-container button:focus {
+    box-shadow: 0 0 10px rgb(0, 81, 255);
+}
+
+.error {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    width: 100%;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.login-btn-container button .login-loader {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border: 1px solid gray;
+    border-top: 1px solid white;
+    border-radius: 50%;
+    animation: authLoader 2s infinite linear;
+}
+
+@keyframes authLoader {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
