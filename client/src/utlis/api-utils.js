@@ -1,7 +1,6 @@
 import { getToken, setCurrentUser } from "./storage-utils";
 
-export const BASE_URL = "http://localhost:4000"
-// export const BASE_URL = "https://instaclone-server-8j4r.onrender.com"
+export const BASE_URL = "https://instaclone-fullstack-tejo.onrender.com"
 
 export function getAllPost(pageNumber) {
 
